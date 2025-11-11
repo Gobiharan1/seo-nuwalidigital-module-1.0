@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI SEO Project Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'bkg': '#191919',
+              'bkg-light': '#202020',
+              'surface': '#2d2d2d',
+              'surface-hover': '#3a3a3a',
+              'primary': '#3b82f6',
+              'primary-hover': '#60a5fa',
+              'secondary': '#8b5cf6',
+              'green': '#10b981',
+              'orange': '#f59e0b',
+              'text-primary': '#f5f5f5',
+              'text-secondary': '#a3a3a3',
+              'border': '#3f3f3f',
+            },
+            animation: {
+              fadeIn: 'fadeIn 0.3s ease-in-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0, transform: 'translateY(10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "xlsx": "https://aistudiocdn.com/xlsx@^0.18.5"
+  }
+}
+</script>
+</head>
+  <body class="bg-bkg text-text-primary">
+    <div id="root"></div>
+  </body>
+</html>
+   
