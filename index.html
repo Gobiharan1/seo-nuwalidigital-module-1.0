@@ -4,53 +4,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI SEO Project Manager</title>
+    <title>Authority SEO | zero-cost Project Suite</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              'bkg': '#191919',
-              'bkg-light': '#202020',
-              'surface': '#2d2d2d',
-              'surface-hover': '#3a3a3a',
-              'primary': '#3b82f6',
-              'primary-hover': '#60a5fa',
-              'secondary': '#8b5cf6',
+              'bkg': '#0a0a0a',
+              'bkg-light': '#121212',
+              'surface': '#1d1d1d',
+              'surface-hover': '#2a2a2a',
+              'primary': '#6366f1',
+              'primary-hover': '#818cf8',
+              'secondary': '#a855f7',
+              'secondary-hover': '#c084fc',
               'green': '#10b981',
               'orange': '#f59e0b',
-              'text-primary': '#f5f5f5',
-              'text-secondary': '#a3a3a3',
-              'border': '#3f3f3f',
+              'text-primary': '#ffffff',
+              'text-secondary': '#94a3b8',
+              'border': '#1e293b',
             },
             animation: {
-              fadeIn: 'fadeIn 0.3s ease-in-out',
+              fadeIn: 'fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+              slideUp: 'slideUp 0.6s ease-out',
             },
             keyframes: {
               fadeIn: {
                 '0%': { opacity: 0, transform: 'translateY(10px)' },
                 '100%': { opacity: 1, transform: 'translateY(0)' },
               },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 },
+              }
             }
           }
         }
       }
     </script>
-  <script type="importmap">
+    <style>
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #0a0a0a; }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+      ::-webkit-scrollbar-thumb:hover { background: #334155; }
+      body { scroll-behavior: smooth; font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #0a0a0a; }
+      .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "xlsx": "https://aistudiocdn.com/xlsx@^0.18.5"
   }
 }
 </script>
-</head>
-  <body class="bg-bkg text-text-primary">
+  </head>
+  <body class="bg-bkg text-text-primary selection:bg-primary/30 antialiased">
     <div id="root"></div>
   </body>
 </html>
-   
